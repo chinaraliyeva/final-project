@@ -66,6 +66,8 @@ header{
     margin-bottom: 56px;
     .main_img{
         margin-bottom: 24px;
+        border-radius: 8px;
+        width: 30%;
     }
     h3{
         font-weight: 600;
@@ -83,11 +85,13 @@ header{
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
-        color: #705DF2;
         padding-right: 12px;
     }
     a{
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #705DF2;
     }
 }
 .first_section{
@@ -182,6 +186,64 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     .social{
         a{
             padding-left: 24px;
+        }
+    }
+}
+@media(max-width:576px){
+    header{
+        .menu{
+            display: none;
+        }
+    }
+    .features_col{
+        .main_img{
+            width: 100%;
+            margin-bottom: 32px;
+        }
+        a{
+            padding: 12px 24px;
+            background: #5343D0;
+            border-radius: 24px;
+            color: #FFFFFF;
+            display: inline;
+        }
+        p{
+            margin-bottom: 24px;
+        }
+    }
+    .first_section{
+        padding: 56px 16px 64px;
+        h3{
+            font-size: 24px;
+            line-height: 32px;
+            width: 60%;
+        }
+        p{
+            margin: 24px 16px 40px;
+            width: 70%;
+        }
+        button{
+            width: 70%;
+            justify-content: center ;
+            padding: 20px auto;
+        }
+    }
+    .booknetic{
+        text-align: center;
+        p{
+            display: none;
+        }
+    }
+    .menu_col{
+        h5{
+            padding-top: 64px;
+        }
+    }
+    .copyright_row{
+        display: flex;
+        flex-direction: column-reverse;
+        .social{
+            margin-bottom: 40px;
         }
     }
 }
