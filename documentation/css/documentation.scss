@@ -41,6 +41,86 @@ header{
     }
 }
 }
+.documentation{
+    .head_sec{
+        text-align: center;
+        padding-bottom: 40px;
+        h3{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #2E3A59;
+            margin-bottom: 16px;
+        }
+        h6{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #2E3A59;
+        }
+    }
+    .first_btns{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 56px;
+        button{
+            padding: 16px 24px;
+            background: #E4DFFE;
+            border: 1px solid #705DF2;
+            border-radius: 24px;
+            margin-right: 16px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #2E3A59;
+        }
+    }
+    .lists{
+        .colored_list{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FC3E70;
+        }
+        li{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 24px 0;
+            border-bottom: 1px solid #E4DFFE;
+            span{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #2E3A59;
+            }
+        }
+        .display{
+            display: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #2E3A59;
+        }
+    }
+    .second_btns{
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        padding: 120px 0 96px;
+        button{
+            padding: 16px 24px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #705DF2;
+            border: 1px solid #E4DFFE;
+            border-radius: 8px;
+            margin-right: 16px;
+        }
+    }
+}
 .first_section{
     display: flex;
     flex-direction: column;
@@ -140,6 +220,23 @@ footer{
     header{
         .menu{
             display: none;
+        }
+    }
+    .documentation{
+        .first_btns, .second_btns{
+            flex-direction: column;
+        }
+        .first_btns{
+            padding-bottom: 32px;
+            button{
+                margin-bottom: 24px;
+            }
+        }
+        .second_btns{
+            padding: 80px 0 56px;
+            button{
+                margin-bottom: 24px;
+            }
         }
     }
     .first_section{

@@ -64,6 +64,105 @@ header .btn img {
   margin-left: 12px;
 }
 
+.documentation .head_sec {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.documentation .head_sec h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2E3A59;
+  margin-bottom: 16px;
+}
+
+.documentation .head_sec h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2E3A59;
+}
+
+.documentation .first_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-bottom: 56px;
+}
+
+.documentation .first_btns button {
+  padding: 16px 24px;
+  background: #E4DFFE;
+  border: 1px solid #705DF2;
+  border-radius: 24px;
+  margin-right: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2E3A59;
+}
+
+.documentation .lists .colored_list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FC3E70;
+}
+
+.documentation .lists li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid #E4DFFE;
+}
+
+.documentation .lists li span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.documentation .lists .display {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2E3A59;
+}
+
+.documentation .second_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 120px 0 96px;
+}
+
+.documentation .second_btns button {
+  padding: 16px 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #705DF2;
+  border: 1px solid #E4DFFE;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
 .first_section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +296,24 @@ footer {
 @media (max-width: 576px) {
   header .menu {
     display: none;
+  }
+  .documentation .first_btns, .documentation .second_btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .documentation .first_btns {
+    padding-bottom: 32px;
+  }
+  .documentation .first_btns button {
+    margin-bottom: 24px;
+  }
+  .documentation .second_btns {
+    padding: 80px 0 56px;
+  }
+  .documentation .second_btns button {
+    margin-bottom: 24px;
   }
   .first_section {
     padding: 56px 16px 64px;
