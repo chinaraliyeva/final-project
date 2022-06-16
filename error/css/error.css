@@ -1,1 +1,122 @@
-/* No CSS *//*# sourceMappingURL=error.css.map */
+@import url(./common.scss);
+header {
+  height: 96px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+header .menu a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E3A59;
+  margin-right: 48px;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+header .btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #705DF2;
+  border-radius: 24px;
+  padding: 12px 24px;
+  border-color: transparent;
+  color: white;
+}
+
+header .btn img {
+  margin-left: 12px;
+}
+
+.error {
+  padding-top: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.error h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2E3A59;
+}
+
+.error p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 24px 0 40px;
+  width: 55%;
+  text-align: center;
+}
+
+.error button {
+  padding: 12px 24px;
+  border: 1px solid #705DF2;
+  border-radius: 24px;
+  margin-bottom: 162px;
+}
+
+.error button span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #705DF2;
+}
+
+@media (max-width: 576px) {
+  .error p {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=error.css.map */

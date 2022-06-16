@@ -1,0 +1,85 @@
+@import url(./common.scss);
+header{
+    height: 96px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    a{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2E3A59;
+        margin-right: 48px;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+}
+    .btn{
+    button{
+        display: flex;
+        align-items: center;
+        background: #705DF2;
+        border-radius: 24px;
+        padding: 12px 24px;
+        border-color: transparent;
+        color: white;
+    }
+    img{
+        margin-left: 12px;
+    }
+}
+}
+.error{
+    padding-top: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: fit-content;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #2E3A59;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 24px 0 40px;
+        width: 55%;
+        text-align: center;
+    }
+    button{
+        padding: 12px 24px;
+        border: 1px solid #705DF2;
+        border-radius: 24px;
+        margin-bottom: 162px;
+        span{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #705DF2;
+        }
+    }
+}
+@media(max-width:576px){
+    .error{
+        p{
+            width: 100%;
+        }
+    }
+}
