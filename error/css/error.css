@@ -1,69 +1,5 @@
 @import url(./common.scss);
-header {
-  height: 96px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50%;
-}
-
-header .menu a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #2E3A59;
-  margin-right: 48px;
-  margin-bottom: 0;
-  text-decoration: none;
-}
-
-header .btn button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #705DF2;
-  border-radius: 24px;
-  padding: 12px 24px;
-  border-color: transparent;
-  color: white;
-}
-
-header .btn img {
-  margin-left: 12px;
-}
-
+@import url(./header.css);
 .error {
   padding-top: 87px;
   display: -webkit-box;
@@ -114,7 +50,7 @@ header .btn img {
   color: #705DF2;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .error p {
     width: 100%;
   }
