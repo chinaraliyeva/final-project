@@ -24,7 +24,7 @@
         justify-content: center;
         text-align: center;
         padding-bottom: 56px;
-        button{
+        .btn{
             padding: 16px 24px;
             background: #E4DFFE;
             border: 1px solid #705DF2;
@@ -34,6 +34,13 @@
             font-size: 14px;
             line-height: 16px;
             color: #2E3A59;
+            &.clicked{
+                background-color: #705DF2;
+                border: 1px solid #E4DFFE;
+                color: #E4DFFE;               
+                transform: scale(1.05,1.05);
+                transition: all 0.3 ease-in-out;
+            }
         }
     }
     .lists{
@@ -56,12 +63,21 @@
                 color: #2E3A59;
             }
         }
-        .display{
+        .plus_text{
             display: none;
             font-weight: 400;
             font-size: 14px;
             line-height: 24px;
             color: #2E3A59;
+            &.show_text{
+                display: block;
+            }
+        }
+    }
+    .plus_img{
+        &.rotated{
+            transform: rotate(45deg);
+            color: #FC3E70;
         }
     }
     .second_btns{
@@ -69,7 +85,7 @@
         justify-content: center;
         text-align: center;  
         padding: 120px 0 96px;
-        button{
+        .btn{
             padding: 16px 24px;
             font-weight: 400;
             font-size: 14px;
@@ -78,6 +94,13 @@
             border: 1px solid #E4DFFE;
             border-radius: 8px;
             margin-right: 16px;
+            &.clicked{
+                background-color: #705DF2;
+                border: 1px solid #E4DFFE;
+                color: #E4DFFE;
+                transform: scale(1.05,1.05);
+                transition: all 0.3 ease-in-out;
+            }
         }
     }
 }

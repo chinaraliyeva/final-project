@@ -32,7 +32,7 @@
   padding-bottom: 56px;
 }
 
-.documentation .first_btns button {
+.documentation .first_btns .btn {
   padding: 16px 24px;
   background: #E4DFFE;
   border: 1px solid #705DF2;
@@ -42,6 +42,16 @@
   font-size: 14px;
   line-height: 16px;
   color: #2E3A59;
+}
+
+.documentation .first_btns .btn.clicked {
+  background-color: #705DF2;
+  border: 1px solid #E4DFFE;
+  color: #E4DFFE;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 .documentation .lists .colored_list {
@@ -70,12 +80,22 @@
   color: #2E3A59;
 }
 
-.documentation .lists .display {
+.documentation .lists .plus_text {
   display: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #2E3A59;
+}
+
+.documentation .lists .plus_text.show_text {
+  display: block;
+}
+
+.documentation .plus_img.rotated {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #FC3E70;
 }
 
 .documentation .second_btns {
@@ -89,7 +109,7 @@
   padding: 120px 0 96px;
 }
 
-.documentation .second_btns button {
+.documentation .second_btns .btn {
   padding: 16px 24px;
   font-weight: 400;
   font-size: 14px;
@@ -98,6 +118,16 @@
   border: 1px solid #E4DFFE;
   border-radius: 8px;
   margin-right: 16px;
+}
+
+.documentation .second_btns .btn.clicked {
+  background-color: #705DF2;
+  border: 1px solid #E4DFFE;
+  color: #E4DFFE;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 
 @media (max-width: 768px) {
