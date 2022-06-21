@@ -14,7 +14,7 @@
           align-items: center;
 }
 
-.error img {
+.error .error_img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -41,6 +41,7 @@
   border: 1px solid #705DF2;
   border-radius: 24px;
   margin-bottom: 162px;
+  background-color: #FFFFFF;
 }
 
 .error button span {
@@ -52,6 +53,9 @@
 
 @media (max-width: 768px) {
   .error p {
+    width: 100%;
+  }
+  .error .error_img {
     width: 100%;
   }
 }
