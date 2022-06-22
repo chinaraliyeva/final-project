@@ -74,14 +74,32 @@
   width: 60%;
   margin-top: -16px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .second_card img {
   width: 100%;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.second_card img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .content {
   width: 70%;
+}
+
+.content img {
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.content img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .text {
@@ -141,8 +159,20 @@
   padding: 102px 0 56px;
 }
 
-.blogs img {
+.blogs .blogs_img {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.blogs .blogs_img img {
   width: 100%;
+  -webkit-transition: .3s all ease-out;
+  transition: .3s all ease-out;
+}
+
+.blogs .blogs_img img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .blogs p {

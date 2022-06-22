@@ -1,6 +1,6 @@
-@import url(../common.scss);
-@import url(./header.css);
-@import url(./footer.css);
+@import url(common.scss);
+@import url(header.css);
+@import url(footer.css);
 .heading {
   padding-top: 25px;
   padding-bottom: 56px;

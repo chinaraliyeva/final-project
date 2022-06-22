@@ -44,6 +44,13 @@
   font-size: 16px;
   line-height: 20px;
   color: #705DF2;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+}
+
+.first_section button:hover {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }
 
 .first_section img {
@@ -87,6 +94,10 @@ footer {
   margin-bottom: 16px;
 }
 
+.menu_col a:hover {
+  text-decoration: underline;
+}
+
 .menu_col h5 {
   font-weight: 600;
   font-size: 20px;
@@ -126,6 +137,15 @@ footer {
 
 .third_section .social a {
   padding-left: 24px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.third_section .social a:hover {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

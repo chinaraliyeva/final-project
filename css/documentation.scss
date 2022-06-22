@@ -1,10 +1,10 @@
-@import url(./common.scss);
-@import url(./header.css);
-@import url(./footer.css);
+@import url(common.scss);
+@import url(header.css);
+@import url(footer.css);
 .documentation{
     .head_sec{
         text-align: center;
-        padding-bottom: 40px;
+        padding: 25px 0 40px;
         h3{
             font-weight: 600;
             font-size: 24px;
@@ -24,7 +24,7 @@
         justify-content: center;
         text-align: center;
         padding-bottom: 56px;
-        .btn{
+        .btn_doc{
             padding: 16px 24px;
             background: #E4DFFE;
             border: 1px solid #705DF2;
@@ -39,13 +39,17 @@
                 border: 1px solid #E4DFFE;
                 color: #E4DFFE;               
                 transform: scale(1.05,1.05);
-                transition: all 0.3 ease-in-out;
+                transition: .3s all ease-in-out;
             }
+        }
+        .btn_doc:hover{
+            transition: .3s all ease-in-out;
+            filter: brightness(90%);
         }
     }
     .lists{
         .colored_list{
-            font-weight: 400;
+            font-weight: 600;
             font-size: 16px;
             line-height: 24px;
             color: #FC3E70;
@@ -54,7 +58,7 @@
             list-style: none;
             display: flex;
             justify-content: space-between;
-            padding: 24px 0;
+            padding: 24px 10px;
             border-bottom: 1px solid #E4DFFE;
             span{
                 font-weight: 400;
@@ -63,12 +67,19 @@
                 color: #2E3A59;
             }
         }
+        li:hover{
+            transition: .3s all ease-in-out;
+            background-color: #edeaf8;
+            transform: scale(1.01);
+            border-radius: 5px;
+        }
         .plus_text{
             display: none;
             font-weight: 400;
             font-size: 14px;
             line-height: 24px;
             color: #2E3A59;
+            padding: 32px 72px 20px 15px;
             &.show_text{
                 display: block;
             }
@@ -85,7 +96,7 @@
         justify-content: center;
         text-align: center;  
         padding: 120px 0 96px;
-        .btn{
+        .btn_doc{
             padding: 16px 24px;
             font-weight: 400;
             font-size: 14px;
@@ -101,6 +112,10 @@
                 transform: scale(1.05,1.05);
                 transition: all 0.3 ease-in-out;
             }
+        }
+        .btn_doc:hover{
+            transition: .3s all ease-in-out;
+            filter: brightness(90%);
         }
     }
 }
@@ -120,6 +135,11 @@
             button{
                 margin-bottom: 24px;
             }
+        }
+        .lists{
+            .plus_text{
+                padding: 16px 16px 24px 16px;
+                }
         }
     }
 }

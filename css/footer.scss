@@ -29,6 +29,10 @@
         font-size: 16px;
         line-height: 20px;
         color: #705DF2;
+        transition: 0.3s all ease-out;
+    }
+    button:hover{
+        filter: brightness(85%);
     }
     img{
         margin-left: 12px;
@@ -62,6 +66,9 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         line-height: 24px;
         margin-bottom: 16px;
     }
+    a:hover{
+        text-decoration: underline;
+    }
     h5{
         font-weight: 600;
         font-size: 20px;
@@ -90,6 +97,11 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     .social{
         a{
             padding-left: 24px;
+            transition: 0.3s all ease-in-out;
+        }
+        a:hover{
+            filter: brightness(85%);
+            transform: scale(1.1 )
         }
     }
 }

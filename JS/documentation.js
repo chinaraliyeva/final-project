@@ -1,6 +1,6 @@
 const plusImg = document.querySelectorAll('.plus_img')
 const plusText = document.querySelectorAll('.plus_text')
-const btn = document.querySelectorAll('.btn')
+const btn = document.querySelectorAll('.btn_doc')
 
 
 

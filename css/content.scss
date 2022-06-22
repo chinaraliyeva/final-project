@@ -57,12 +57,23 @@
     width: 60%;
     margin-top: -16px;
     z-index: 1;
+    overflow: hidden;
     img{
         width: 100%;
+        transition: .3s all ease-out;
+    }
+    img:hover{
+        transform: scale(1.05);
     }
 }
 .content{
     width: 70%;
+    img{
+        transition: .3s all ease-out;
+    }
+    img:hover{
+        transform: scale(1.05);
+    }
 }
 .text{
     padding: 82px 0 56px;
@@ -114,8 +125,16 @@
         text-align: center;
         padding: 102px 0 56px;
     }
-    img{
-        width:100%; 
+    .blogs_img{
+        overflow: hidden;
+        border-radius: 8px;
+        img{
+            width:100%; 
+            transition: .3s all ease-out;
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
     }
     p{
         font-weight: 400;
